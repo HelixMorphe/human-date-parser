@@ -5,7 +5,11 @@
   "type": "module",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsup src/index.ts --format cjs,esm --dts"
+    "dev": "vitest",
+    "test": "vitest run",
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "lint": "tsc",
+    "ci": "pnpm run lint & pnpm run test & pnpm run build"
   },
   "keywords": [],
   "license": "MIT",
@@ -13,6 +17,7 @@
   "devDependencies": {
     "@types/node": "^20.8.6",
     "tsup": "^8.2.1",
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "vitest": "^2.0.3"
   }
 }
