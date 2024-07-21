@@ -8,6 +8,7 @@
     "build": "tsup src/index.ts --format cjs,esm --dts"
   },
   "keywords": [],
+  "license": "MIT",
   "author": "Sai Santhosh Pentakota",
   "devDependencies": {
     "@types/node": "^20.8.6",
