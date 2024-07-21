@@ -1,0 +1,17 @@
+{
+  "name": "human-date-parser",
+  "version": "0.0.1",
+  "description": "",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts"
+  },
+  "keywords": [],
+  "author": "Sai Santhosh Pentakota",
+  "devDependencies": {
+    "@types/node": "^20.8.6",
+    "tsup": "^8.2.1",
+    "typescript": "^5.2.2"
+  }
+}
